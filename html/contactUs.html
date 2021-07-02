@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Name : Youngju Ahn
+     ID   : 100546460     -->
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <!-- Meta information for Web search engine -->
+    <meta name="description" content="Travel Jeju">
+    <meta name="keywords" content="Travel, Jeju, South Korea, Island">
+    <meta name="author" content="Youngju Ahn">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Love Jeju - Contact Us</title>
+		<!-- Add Link for Fonts ( Ubuntu ) -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/jeju.css">
+		<script src="../js/jeju.js"></script>
+	</head>
+	<body>
+		<div id="container">
+
+			<header>
+				<div id="banner" class="desktop">
+					<img class="mySlides" src="../images/desktop-logo1.jpg" alt="home banner image">
+					<img class="mySlides" src="../images/desktop-logo2.jpg" alt="home banner image">
+					<img class="mySlides" src="../images/desktop-logo3.jpg" alt="home banner image">
+				</div>
+				<p id="logo">
+					<!-- Love<a href="index.html"><i class="fa fa-heart" aria-hidden="true" style="font-size:0.8em;"></i></a>Jeju -->
+					Love<a href="../index.html"><i class="fa fa-paper-plane" aria-hidden="true" style="font-size:0.8em;"></i></a>Jeju
+				</p>
+			</header>
+			<main>
+			<nav>
+				<ul>
+					<li><a href="../html/information.html">Information</a></li>
+					<li><a href="../html/attractions.html">Attractions</a></li>
+					<li><a href="../html/contactUs.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h3>Do you need more information? <br/>Complete the form below.</h3>
+				<form target="_blank" onsubmit="window.open('about:blank','print_popup','width=500,height=800');">
+					<label for="fname">First Name: </label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name: </label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="email">e-mail: </label>
+					<input type="email" name="email" id="email" placeholder="Your e-mail address.."/>
+					<label for="phone">Phone: </label>
+					<input type="tel" name="phone" id="phone" placeholder="Your phone number.."/>
+
+					<label for="country">Country:</label>
+					<select id="country" name="country">
+						<option value="Australia">Australia</option>
+						<option value="New Zealand">New Zealand</option>
+						<option value="China">China</option>
+						<option value="Japan">Japan</option>
+						<option value="USA">USA</option>
+						<option value="France">France</option>
+						<option value="South Korea">South Korea</option>
+						<option value="North Korea">Korth Korea</option>
+					</select>
+
+					<p>I would like more information about:</p>
+					<ul>
+						<li><input type="checkbox" name="unesco" id="unesco" class="chkbx"/>World Heritage in Jeju(UNESCO)</li>
+						<li><input type="checkbox" name="nature" id="nature" class="chkbx"/>Nature</li>
+						<li><input type="checkbox" name="olle" id="olle" class="chkbx"/>Olle trail</li>
+					</ul>
+					<label for="question">Question?</label>
+					<textarea id="question" name="question" placeholder="Write something.." style="height:50px"></textarea>
+
+					<input type="submit" value="Submit">
+					<input type="reset" id="reset" value="Reset" class="btn" />
+				</form>
+			</article>
+			</main>
+
+			<footer>
+				<div id="copyright">
+					&copy; Copyright 2017. All Rights reserved.<br/>
+		      <a href="mailto:youngju@comeToJeju.com">youngju@comeToJeju.com</a>
+				</div>
+				<div id="social">
+					<a href="https://www.facebook.com/koreatourism" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/search?q=%23JEJU" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.google.com.au/search?source=hp&ei=VQ8IWtuzPIu90gSgyZLQCg&q=jeju+island&oq=jeju+island&gs_l=psy-ab.3...1089.5324.0.5460.12.10.0.0.0.0.355.974.2-1j2.3.0....0...1.1.64.psy-ab..9.3.973...0j0i131k1.0.dE-Ba1EL_Eg" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/results?search_query=jeju" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+				</div>
+			</footer>
+		</div>  <!-- end div of container -->
+		<script>
+		var myIndex = 0;
+		carousel();   // banner for desktop
+		</script>
+	</body>
+</html>

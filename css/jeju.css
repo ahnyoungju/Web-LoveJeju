@@ -1,0 +1,592 @@
+@charset "utf-8";
+/**
+ * CSS for Come to Jeju web page
+ * @author: Youngju Ahn
+ * @ID: 100546460
+ * @date: 10/11/2017
+**/
+
+/*--- Mobile First -------------------------------*/
+body {
+  font-family: Georgia, Ubuntu, Roboto, sans-serif;
+  color:#000000;
+  background:#0092E8;
+}
+label, input, ul, li, a, article {
+  font-family: Ubuntu, Roboto, Georgia, sans-serif;
+}
+header, nav, nav li a {
+  color:#FFFFFF;
+  font-family: Georgia, Ubuntu, Roboto, sans-serif;
+}
+h2 {
+  font-size:1.2em;
+}
+h3 {
+  font-size:1.1em;
+}
+
+/* Style displays the mobile class */
+.tablet {
+  display:none;
+}
+.desktop {
+  display:none;
+}
+.mobile {
+  display:inline;
+}
+.center {
+  text-align:center;
+  margin:auto;
+}
+
+article {
+  /*background:#e7e7e7;*/
+  background:#FFFFFF;
+  border-radius: 2em 2em 2em 2em;
+  /*opacity: 0.9;*/
+  display:block;
+  padding: 1em;
+  text-align:left;
+}
+
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-left-style:none;
+  border-right-style:none;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  text-align:center;
+  font-weight:normal;
+  background-color:#3871ac;
+  color:#FFFFFF;
+}
+tr:nth-child(even) {
+  background-color:#92B6D5;
+}
+tr a {
+  color:#000000;
+}
+iframe {
+  width:100%;
+  height:100%;
+  border:0;
+}
+#social {
+  text-align:right;
+}
+
+img {
+  max-width:90%;
+}
+
+header {
+  margin: 0 auto;
+  text-align:center;
+}
+
+a {
+  text-decoration:none;
+}
+
+#logo {
+  font-size:1.3em;
+  font-weight:bold;
+}
+
+/*#logo:hover {
+  opacity: 0.8;
+}*/
+
+/* Style for nav specifies text properties */
+nav {
+	font-size: 1.1em;
+	text-align: center;
+	margin-top: -1em;
+  font-weight: bold;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+	background-color: #FFFFFF;
+	border-radius: 2em;
+  opacity: 0.9;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #0092E8;
+	text-decoration: none;
+}
+
+nav li a:hover {
+  color: #2c5098;
+}
+
+footer {
+  color:#000000;
+  text-align:center;
+  font-size:0.8em;
+  padding-left:5em;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+footer a {
+  color:#000000;
+	text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.8;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+/* Google */
+.fa-google {
+  background: #dd4b39;
+  color:white;
+}
+
+/* paper plane */
+.fa-paper-plane {
+  color:#3a2efe;
+}
+
+/*.fa-paper-plane {
+color: #FFFFFF;
+}*/
+/*Style for copyright */
+#copyright {
+	float:left;
+  margin-top:0.5em;
+	width:60%;
+  padding-bottom:1em;
+}
+#social {
+	float:right;
+	width:30%;
+  padding-bottom:1em;
+}
+
+/* Style rule for checkbox class */
+.chkbx {
+	display:inline-block;
+  text-align:left;
+}
+
+li {
+  list-style:none;
+}
+
+/* Style rule for input, select and textarea */
+input, select, textarea {
+	display:block;
+	margin-bottom:1em;
+}
+/* Style rule for label element */
+label {
+	display:block;
+  margin: 0 auto;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea, select {
+	width:90%;
+  display:block;
+	padding:0.5em;
+	margin: 8px 0;
+}
+
+select {
+  width:93%;
+}
+input[type=submit], input[type=reset]  {
+  width: 30%;
+  background-color: #b7c8db;
+  color: #000000;
+  padding: 14px 20px;
+  /*margin-left: 25%;*/
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	font-size:1em;
+	display:inline-block;
+}
+input[type=reset] {
+  margin-left: 5%;
+}
+input[type=submit]:hover , input[type=reset]:hover {
+    background-color: #0092E8;
+    color:#FFFFFF;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    /*background-color: #0092E8; */
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+		font-size:1em;
+    margin-top:0.5em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*button.accordion.active, button.accordion:hover {*/
+button.accordion:hover {
+    opacity: 0.8;
+}
+
+button.accordion:after {
+    content:"\002B";      /* Unicode character for "plus" sign (+) */
+		font-size:1em;
+    color: #FFFFFF;
+    /*font-weight: bold;*/
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";    /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: white;
+  display: none;
+  text-align:left;
+}
+
+.green {
+  background-color:#4CAF50;
+}
+.blue {
+  background-color:#2196F3;
+}
+.orange {
+  background-color:#ff9800;
+}
+.red {
+  background-color:#f44336;
+}
+.gray {
+  background-color:#66757F;
+}
+.snorkelBlue {
+  background-color:#034F84;
+}
+.lilacGrey {
+  background-color:#9896A4;
+}
+.aquaSky {
+  background-color:#7FCDCD;
+}
+.ceruleanBlue {
+  background-color:#98B4D4;
+}
+
+/* Media query for tablet layout targets screen size with a minimum width of 660px.  */
+@media only screen and (min-width: 660px) {
+  /* Style hides the mobile class */
+  .mobile {
+    display:none;
+  }
+  .tablet {
+    display:inline;
+  }
+  /* Style displays the desktop class */
+  .desktop {
+    display:none;
+  }
+
+  /* Style specifies a horizontal display for navigation links */
+  body {
+    background:#FFFFFF;
+    color:#000000;
+  }
+  header {
+    color:#0092E8;
+  }
+  nav li {
+  	display: inline;
+  	float: left;
+  	margin-left: 1%;
+  	margin-right: 1%;
+  	padding-left: 0;
+  	padding-right: 0;
+  	width: 31%;
+  	white-space: nowrap;
+  	border-radius: 0;
+  	background-color:#FFFFFF;   /*transparent;*/
+    color:#000000;
+  }
+  nav li:hover {
+    text-shadow: 2px 2px 5px #0092E8;
+  }
+
+  /* Style specifies clear and top margin properties for the main element */
+  article {
+    margin:1em;
+    width:90%;
+	  /*clear: left;*/
+	  margin-top: 0.5em;
+	  border-radius: 0;
+	  overflow: auto;
+    background:#e0e6e2;
+    border-radius: 2em 2em 2em 2em;
+  }
+  /* Style rule for checkbox class */
+  .chkbx {
+    margin-left:21%;
+  }
+  label {
+    float:left;
+    width:25%;
+  }
+  input[type=text], input[type=email], input[type=tel], textarea {
+	  width:70%;
+  }
+  select {
+    width:72.5%;
+  }
+  input[type=submit], input[type=reset]  {
+    width: 30%;
+    background-color:#0092E8;;
+    color: #000000;
+    padding: 14px 20px;
+    margin-left: 25%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  	font-size:1em;
+  	display:inline-block;
+  }
+  input[type=reset] {
+    margin-left: 5%;
+  }
+  /*Style for copyright */
+  #copyright {
+    margin-left:2em;
+  	width:60%;
+    float:left;
+    /*display:inline-block;*/
+  }
+  #social {
+  	width:30%;
+    margin-right:2em;
+  }
+
+  .imgLeft {
+    width:40%;
+    float:left;
+    padding-right:0.5em;
+  }
+  .imgRight {
+    width:40%;
+    float:right;
+    padding-left:0.5em;
+  }
+  .panel {
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  .panel h3 {
+    padding-top:1em;
+    clear:both;
+    font-weight:bold;
+  }
+}  /* end media query min-width:660px */
+
+/* Media query for desktop layout targets screens with a minimum width of 830px. Inherits styles from mobile layout defined above. */
+@media only screen and (min-width: 830px) {
+  /* Style displays the desktop class */
+  .mobile {
+    display:none;
+  }
+  .tablet {
+    display:none;
+  }
+  .desktop {
+    display:inline;
+  }
+
+  div.panel {
+    display:inline-block;
+    box-shadow: 5px 5px 5px #888888;
+    overflow: auto;
+  }
+
+  h2 {
+    clear:both;
+  }
+  .panel h3 {
+    padding-top:0.5em;
+  }
+  .panel p {
+    padding-bottom:0.5em;
+  }
+
+  img {
+    max-width:100%;
+  }
+  /* Style all font awesome icons */
+  .fa {
+      padding: 15px;
+      font-size: 15px;
+      width: 15px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10%;
+  }
+  #copyright {
+    margin-left:4em;
+  	width:60%;
+  }
+  #social {
+  	width:30%;
+    margin-right:2em;
+  }
+
+  body, container, header {
+    background-color:#FFFFFF;
+    width:100%;
+    margin:0;
+    padding:0;
+    border:0;
+  }
+
+  #banner {
+    width:100%;
+    margin:0;
+    padding:0;
+    border:0;
+  }
+  #logo {
+    margin:0 auto;
+    padding:0;
+  }
+  header img {
+    width:100%;
+  }
+
+  main {
+    display:inline-table;
+  }
+
+  /* Style for nav specifies a float, margin, and width */
+  nav {
+  	float: left;
+  	margin: 0;
+    margin-left: 2em;
+    /*width:30%;*/
+  }
+
+  /* Style specifies margin and padding for the unordered list within the nav */
+  nav ul {
+    margin: 0;
+  }
+
+  nav li a:hover {
+    color:#FFFFFF;
+    text-shadow: -1px 0 #0092E8, 0 1px #0092E8, 1px 0 #0092E8, 0 -1px #0092E8;
+  }
+
+  /* Style for navigation list items specifies a border radius, border, margin, width, and padding */
+  nav li {
+    float:left;
+    clear:left;
+    display:block;
+  	margin-left: 0;
+  	margin-right: 0;
+    margin-top:1.5em;
+  	padding: 0;
+  }
+
+  /* Style for navigation links specifies display and padding */
+  nav li a {
+  	display: inline-block;
+  	padding: 0.5em;
+  	/*text-shadow: 0.1em 0.1em #3D3D35;*/
+  }
+
+  main {
+    width:100%;
+  }
+
+  nav {
+  	float: left;
+    margin-left:1.5em;
+  }
+  article {
+    width:70%;
+    float:right;
+    margin-right:2em;
+    /*padding:10px;*/
+  }
+
+  main:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+  footer {
+    text-align:center;
+    font-size:0.8em;
+    margin-top:1em;
+    margin-bottom:1em;
+    padding-bottom:1em;
+  }
+}    /* end media query min-width:830px */
